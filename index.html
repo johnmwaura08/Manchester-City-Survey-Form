@@ -1,75 +1,179 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manchester City Survey Form</title>
-    <link rel="stylesheet" href="styles.css" >
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <h1 id="title" class="text-center"> Manchester City FC Survey</h1>
-            <p id="description" class="description text-center">
-              Thank you for taking the time to answer a few questions about your favorite team!!
-            </p>
-          </header>
-          <form id="survey-form">
-            <div class="form-group">
-                <label id="name-label" for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
-              </div>
+      <header class="header">
+        <h1 id="title" class="text-center">Manchester City FC Survey</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to answer a few questions about your
+          favorite team!!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
 
-              <div class="form-group">
-                <label id="email-label" for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
-              </div>
-              <div class="form-group">
-                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
-                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
-              </div>
-              <div class="form-group">
-                <p>Which option best describes your current location?</p>
-                <select id="dropdown" name="location" class="form-control" required>
-                  <option disabled selected value>Select current Location</option>
-                    <option value="united-kingdom">United Kingdom</option>
-                    <option value="europe">Europe</option>
-                    <option value="north-america">North-America</option>
-                    <option value="south-america">South-America</option>
-                    <option value="africa">Africa</option>
-                    <option value="middle-east">Middle-East</option>
-                    <option value="asia">Asia</option>
-                    <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <p>Would you travel to another continent to watch us during pre-season?</p>
-          
-                <label>
-                  <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
-                <label>
-                  <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
-          
-                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
-              </div>
-              <div class="form-group">
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current location?</p>
+          <select id="dropdown" name="location" class="form-control" required>
+            <option disabled selected value>Select current Location</option>
+            <option value="united-kingdom">United Kingdom</option>
+            <option value="europe">Europe</option>
+            <option value="north-america">North-America</option>
+            <option value="south-america">South-America</option>
+            <option value="africa">Africa</option>
+            <option value="middle-east">Middle-East</option>
+            <option value="asia">Asia</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Would you travel to another continent to watch us during pre-season?
+          </p>
 
-                <p>
-                  Which trophy do you want us to win most?
-                </p>
-                <select id="trophy" name="trophy" class="form-control" required>
-                  <option disabled selected value>Select an option</option>
-                  <option value="champions-league">Champions League</option>
-                  <option value="premier-league">Premier League</option>
-                  <option value="carabao-cup">Carabao Cup</option>
-                  <option value="fa-cup">FA-Cup</option>
-                </select>
-            </div>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
 
-          </form>
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Which trophy do you want us to win most?</p>
+          <select id="trophy" name="trophy" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="champions-league">Champions League</option>
+            <option value="premier-league">Premier League</option>
+            <option value="carabao-cup">Carabao Cup</option>
+            <option value="fa-cup">FA-Cup</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Who was your player of the season 2019/2020?
+            <span class="clue"> (Below is a list of nominees) </span>
+          </p>
 
+          <label for="player-1"
+            ><input
+              type="checkbox"
+              name="player"
+              id="player-1"
+              value="player-1"
+            />
+            Kevin De Bruyne</label
+          >
+          <label for="player-2"
+            ><input
+              type="checkbox"
+              name="player"
+              id="player-2"
+              value="player-2"
+            />
+            Raheem Sterling</label
+          >
+          <label for="player-3"
+            ><input
+              type="checkbox"
+              name="player"
+              id="player-3"
+              value="player-3"
+            />
+            Gabriel Jesus</label
+          >
+          <label for="player-4"
+            ><input
+              type="checkbox"
+              name="player"
+              id="player-4"
+              value="player-4"
+            />
+            David Silva</label
+          >
+          <label for="player-5"
+            ><input
+              type="checkbox"
+              name="player"
+              id="player-5"
+              value="player-5"
+            />
+            Sergio Aguero</label
+          >
+          <label for="player-6"
+            ><input
+              type="checkbox"
+              name="player"
+              id="player-6"
+              value="player-6"
+            />
+            Ederson Moraes Da-Silva
+          </label>
+        </div>
+      </form>
     </div>
-    
-</body>
+  </body>
 </html>
